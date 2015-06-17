@@ -11,3 +11,11 @@ services:
   - couchdb
 
 archive: true
+
+notifications:
+     email:
+         recipients:
+             - vidya@shippable.com
+             - exampletwo@org.com
+         on_success: change
+         on_failure: always
